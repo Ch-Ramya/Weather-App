@@ -1,0 +1,19 @@
+<div class="forecast-container">
+  <div class="forecast-title">
+    <p>Forecast For next 8 Days</p>
+    <p class="color-blue"> {{location}} </p>
+  </div>
+  <div class="seven-day-forecast-container">
+
+      <div class="each-day-container"  *ngFor="let data of sevenDaysForecast">
+        <img class="forecast-icon" src="{{data.icon}}"/>
+        <p class="forecast-temp color-blue"><i class="fa fa-circle-o forecast-degree-position"></i>{{data.temperature}}</p>
+        <div class="forecast-other-details">
+          <p>{{data.sunrise * 1000 | date: 'shortTime'}}</p>
+          <p>{{data.sunset * 1000 | date: 'shortTime'}}</p>
+        </div>
+      </div>
+
+  </div>
+
+</div>

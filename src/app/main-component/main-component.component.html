@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <app-search-city (changeLocationEvent)="getWeatherData()"></app-search-city>
+  <div class="current-weather-container">
+    <app-weather-card [weatherCard]="weatherCardData"></app-weather-card>
+  </div>
+  <div class="other-info-container">
+    <app-weather-more-info [moreInfo]="weatherMoreInfo"></app-weather-more-info>
+  </div>
+</div>

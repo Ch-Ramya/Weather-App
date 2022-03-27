@@ -1,0 +1,101 @@
+.parent-tab {
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.parent-tab label {
+  background: linear-gradient(45deg, #007ab8, #0091da);
+  opacity: 0.8;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  color: #fefefe;
+  transition: all 0.3s ease;
+}
+
+.parent-tab label:hover {
+  background-color: #7f35b2;
+  opacity: 0.8;
+}
+
+.panel-title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.icon {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  display: block;
+  background: #fff;
+  color: #1d428a;
+  border-radius: 50%;
+}
+
+.icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.more-details-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.more-details-content p {
+  font-size: 12px;
+  color: #f3f3f3;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+  height: 90px;
+  background-color: rgba(245,245,245,0.1);
+  border-radius: 30px;
+  margin: 4px;
+}
+
+.more-details-content p a {
+  margin-bottom: 7px;
+  margin-top: 2px;
+}
+
+.parent-tab input:checked ~ .more-details-content{
+  max-height: 100vh;
+  padding: 5px;
+}
+
+.parent-tab input:checked ~ label .icon i:before {
+  content: '\f068';
+}
+
+.weather-icon {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1d428a;
+  margin: 10px 0 5px 0;
+}
+
+
+
+

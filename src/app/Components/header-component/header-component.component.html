@@ -1,0 +1,15 @@
+<nav class="header-container">
+  <div class="logo-container">
+    <span>Weather</span>
+  </div>
+  <a class="toggle-button" (click)="handleToggleBtnClick()">
+    <span class="toggle-bar"></span>
+    <span class="toggle-bar"></span>
+    <span class="toggle-bar"></span>
+  </a>
+  <ul class="navigation-list" #navList>
+    <li class="navigation-link" routerLink="current" routerLinkActive="selection"><a>Current Report</a></li>
+    <li class="navigation-link" routerLink="forecast" routerLinkActive="selection"><a>Forecast</a></li>
+  </ul>
+</nav>
+

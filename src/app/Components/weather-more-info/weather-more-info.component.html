@@ -1,0 +1,15 @@
+<div class="parent-tab">
+  <input type="checkbox" checked name="tab" id="moreDetails">
+  <label for="moreDetails">
+    <span class="panel-title">More Details</span>
+    <div class="icon"><i class="fa fa-plus"></i></div>
+  </label>
+  <div class="more-details-content">
+    <p><i class="weather-icon wi wi-strong-wind"></i><a>Wind Speed </a><span class="color-blue">{{moreInfo.windSpeed}} mph</span></p>
+    <p><i class="weather-icon wi wi-rain"></i><a>Humidity </a><span class="color-blue">{{moreInfo.humidity}} %</span></p>
+    <p><i class="weather-icon fa fa-low-vision"></i><a>Visibility </a><span class="color-blue">{{moreInfo.visibility}} m</span> </p>
+    <p><i class="weather-icon wi wi-sunrise"></i><a>Sunrise </a><span class="color-blue">{{moreInfo.sunrise * 1000 | date : 'shortTime'}}</span> </p>
+    <p><i class="weather-icon wi wi-sunset"></i><a>Sunset</a><span class="color-blue">{{moreInfo.sunset * 1000 | date: 'shortTime'}} </span></p>
+    <p><i class="weather-icon fa fa-area-chart"></i><a>Pressure</a><span class="color-blue">{{moreInfo.pressure}}  mbars</span></p>
+  </div>
+</div>

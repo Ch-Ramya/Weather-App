@@ -1,0 +1,28 @@
+.wrapper {
+  height: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+}
+
+.weather-info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 15px;
+}
+
+.current-weather-container {
+  margin : 25px auto;
+  height: 260px;
+  width: 350px;
+  background-color: rgba(255,255,255,0.2);
+  box-shadow: 10px 10px 10px rgba(60,57,57,0.21);
+  border-radius: 20px;
+}
+
+.other-info-container {
+  width: 350px;
+  margin: auto;
+}

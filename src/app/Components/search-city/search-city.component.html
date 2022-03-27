@@ -1,0 +1,6 @@
+<form class="search-city-form" [formGroup]="chooseCityForm" (ngSubmit)="onSubmit()">
+  <div>
+    <input type="text" class="city-input" placeholder="Enter City..." formControlName="cityName"/>
+  </div>
+  <button class="search-button">Search</button>
+</form>

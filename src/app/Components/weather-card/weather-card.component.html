@@ -1,0 +1,17 @@
+<div class="current-details">
+  <div class="location-container">
+    <p>{{weatherCard.cityName }}, {{weatherCard.countryName}}</p>
+  </div>
+  <div class="temp-container">
+    <i class="fa fa-circle-o degree-position"></i>
+    <span>{{weatherCard.temperature | number : '1.0-0'}}</span>
+  </div>
+  <div class="overall-climate-container">
+    <span><i class="fa fa-cloud"></i> {{weatherCard.climateDescription}}</span>
+  </div>
+
+  <div class="required-info">
+    <div class="min-temp-container"><p><i class="fa fa-thermometer-empty max-temp-icon"></i>Min Temperature : <b class="color-blue" style="position: relative"><i class="fa fa-circle-o minmax-degree-position"></i>{{weatherCard.minTemp | number : '1.0-0'}}</b></p></div>
+    <div class="max-temp-container"><p><i class="fa fa-thermometer min-temp-icon"></i>Max Temperature : <b class="color-blue" style="position: relative;"><i class="fa fa-circle-o minmax-degree-position"></i>{{weatherCard.maxTemp | number : '1.0-0'}}</b></p></div>
+  </div>
+</div>
