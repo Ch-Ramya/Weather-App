@@ -1,3 +1,4 @@
+//creates Object Model for the weather card details
 export class weatherCard{
   public cityName : string;
   public countryName : string;

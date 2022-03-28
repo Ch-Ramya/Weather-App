@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {weatherCard} from "./weatherCard.model";
-import {moreInfo} from "./weatherMoreInfo.model";
-import {ForecastData} from "./forecastData.model";
+import {weatherCard} from "../models/weatherCard.model";
+import {moreInfo} from "../models/weatherMoreInfo.model";
+import {ForecastData} from "../models/forecastData.model";
 import {map, tap} from "rxjs/operators";
 
 @Injectable({

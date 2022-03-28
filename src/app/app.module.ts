@@ -9,9 +9,9 @@ import { HeaderComponentComponent } from './Components/header-component/header-c
 import { SearchCityComponent } from './Components/search-city/search-city.component';
 import { WeatherMoreInfoComponent } from './Components/weather-more-info/weather-more-info.component';
 import { ForecastInfoComponent } from './Components/forecast-info/forecast-info.component';
-import {WeatherResolver} from "./weather.resolver";
+import {WeatherResolver} from "./resolvers/weather.resolver";
 import { MainComponentComponent } from './main-component/main-component.component';
-import {ForecastResolver} from "./forecast.resolver";
+import {ForecastResolver} from "./resolvers/forecast.resolver";
 
 const appRoutes: Routes =[
   {path: 'current', component: MainComponentComponent, resolve : {data : WeatherResolver}},

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Input} from "@angular/core";
-import {weatherCard} from "../../weatherCard.model";
+import {weatherCard} from "../../models/weatherCard.model";
 
 @Component({
   selector: 'app-weather-card',

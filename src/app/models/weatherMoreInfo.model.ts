@@ -1,3 +1,4 @@
+//creates object for more details like wind, pressure etc
 export class moreInfo{
   public windSpeed : number;
   public sunrise: number;

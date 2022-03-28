@@ -1,3 +1,4 @@
+//Creates a object model for each day details in forecast page
 export class ForecastData {
   public date: string;
   public sunrise: string;

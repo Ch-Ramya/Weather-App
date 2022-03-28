@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, Validators} from "@angular/forms";
-import {WeatherService} from "../../weather.service";
+import {WeatherService} from "../../services/weather.service";
 import { Output, EventEmitter } from '@angular/core';
 
 @Component({
